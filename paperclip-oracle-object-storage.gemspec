@@ -19,6 +19,9 @@ Gem::Specification.new do |spec|
   spec.metadata["changelog_uri"] = "https://github.com/prosas/paperclip-oracle-object-storage/CHANGELOG.md"
 
   spec.require_paths = ["lib"]
+  spec.files = Dir[
+    '{lib}/**/*',
+  ]
 
   spec.add_dependency 'oci', '2.22.0'
 end
