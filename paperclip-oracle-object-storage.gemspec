@@ -24,5 +24,5 @@ Gem::Specification.new do |spec|
   ]
 
   spec.add_dependency 'oci', '2.22.0'
-  spec.add_dependency "kt-paperclip", ">= 7.2.2"
+  spec.add_dependency "kt-paperclip", ">= 6.4.1"
 end
