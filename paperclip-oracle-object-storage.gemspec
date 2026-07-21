@@ -20,5 +20,5 @@ Gem::Specification.new do |spec|
 
   spec.require_paths = ["lib"]
 
-  gem.add_dependency 'oci', '~> 2.23'
+  spec.add_dependency 'oci', '2.22.0'
 end
