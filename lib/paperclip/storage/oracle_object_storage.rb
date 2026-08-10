@@ -57,7 +57,12 @@ module Paperclip
       end
 
       def object_name(style = default_style)
-        path(style).sub(%r{\A/}, "").unicode_normalize(:nfc).then { |p| I18n.transliterate(p) }
+        path(style)
+          .sub(%r{\A/}, "")
+          .unicode_normalize(:nfc)
+          .gsub(/[ªº]/, '')
+          .then { |p| I18n.transliterate(p) }
+          .gsub("?","")
       end
 
       def exists?(style = default_style)
